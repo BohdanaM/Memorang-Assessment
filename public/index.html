@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f8fc" />
+    <title>Practice Assessment | Memorang</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Memorang home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Memorang</span>
+      </a>
+      <span class="topbar-label">Learner workspace</span>
+    </header>
+
+    <main class="page-shell">
+      <div class="breadcrumbs" aria-label="Breadcrumb">
+        <span>My learning</span><span aria-hidden="true">/</span><span>Practice</span>
+      </div>
+
+      <section class="assessment-card" aria-labelledby="page-title">
+        <div class="card-header">
+          <div>
+            <p class="eyebrow">BIOLOGY · FOUNDATIONS</p>
+            <h1 id="page-title">Cell Biology Check-in</h1>
+            <p class="subheading">A short practice assessment to review key ideas.</p>
+          </div>
+          <span class="time-badge">5 min</span>
+        </div>
+
+        <div id="assessment" class="assessment-body">
+          <div class="progress-row">
+            <span id="progress-label">Question 1 of 3</span>
+            <span id="score-label">0 correct</span>
+          </div>
+          <div class="progress-track" aria-hidden="true"><div id="progress-fill" class="progress-fill"></div></div>
+
+          <form id="question-form" novalidate>
+            <fieldset>
+              <legend id="question-prompt"></legend>
+              <div id="choices" class="choices"></div>
+            </fieldset>
+            <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+            <div class="actions">
+              <button id="submit-answer" class="button button-primary" type="submit">Check answer</button>
+              <button id="continue" class="button button-primary" type="button" hidden>Continue</button>
+            </div>
+          </form>
+        </div>
+
+        <section id="summary" class="summary" aria-labelledby="summary-title" hidden>
+          <div class="summary-icon" aria-hidden="true">✓</div>
+          <p class="eyebrow">SESSION COMPLETE</p>
+          <h2 id="summary-title">Nice work!</h2>
+          <p id="summary-score" class="summary-score"></p>
+          <p class="summary-copy">Your practice session is complete. Keep building your understanding one step at a time.</p>
+          <button id="restart" class="button button-secondary" type="button">Try again</button>
+        </section>
+      </section>
+      <p class="footnote">Your progress in this demo is not saved.</p>
+    </main>
+  </body>
+</html>

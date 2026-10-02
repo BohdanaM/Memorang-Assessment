@@ -1,0 +1,14 @@
+{
+  "name": "qa-automation-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deterministic learner-assessment demo app for a QA automation exercise",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.2"
+  }
+}
